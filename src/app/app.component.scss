@@ -1,0 +1,38 @@
+.box{
+  height: 200px;
+  width: 200px;
+  overflow: auto;
+  background-color: red;
+}
+.product-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.product-card{
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+
+  img{
+    width: 100%
+  }
+}
+.message-error{
+  background-color: red;
+  color:white;
+  opacity: 0;
+  transition: all linear .5s;
+  &.invalid{
+    opacity: 1;
+  }
+}
